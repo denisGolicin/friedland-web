@@ -1,0 +1,244 @@
+@font-face {
+	font-family: 'centurygothic'; 
+	src: local('centurygothic'), url('../css/fonts/centurygothic.ttf'); 
+}
+body, html{
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../src/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: rgb(172,138,73);
+
+    overflow: hidden;
+
+    font-family: 'centurygothic', sans-serif;
+
+}
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../src/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: rgb(172,138,73);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 100;
+}
+.loader>p{
+    margin-top: 25px;
+    color: #210C10;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 3px solid #210C10;
+    border-left: 3px solid #210C10;
+    animation: loader .55s infinite linear;
+}
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wrapper, .window{
+    width: 100%;
+    height: 100%;
+}
+
+.w-auth {
+    display: flex;
+    flex-direction: column;
+}
+.w-map {
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+    padding-bottom: 3px;
+}
+.w-video {
+    display: none;
+}
+
+.wrapper-logo {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper-logo>img{
+    height: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.exit{
+    height: 35% !important;
+}
+.wrapper-logo>p{
+    font-size: 18px;
+
+    font-weight: bold;
+}
+.wrapper-map {
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+.wrapper-map>img{
+    width: 100%;
+    max-width: 700px;
+}
+.wrapper-audio {
+    width: 99%;
+    height: 50%;
+
+    border: 2px solid rgba(0, 0, 0, 0.699);
+
+    overflow-y: auto;
+    padding: 3px;
+
+    box-shadow: 0 0 5px black inset;
+
+    border-radius: 7px;
+}
+.audio-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+audio{
+    width: 100%;
+    margin-left: 5px;
+}
+.icon-audio{
+    width: 44px;
+    height: 44px;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    border-radius: 50%;
+    background-color: #212526;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.text-error{
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 24px;
+
+    display: none;
+}
+
+/* Авторизация */
+.wrapper-logo-auth{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.wrapper-logo-auth>img{
+    width: 60%;
+}
+.wrapper-logo-auth>h1{
+    margin-top: 25px;
+}
+.wrapper-form{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button, input, .wrapper-form>p{
+    width: 80%;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 13px;
+}
+input, .wrapper-form>p{
+    margin-top: 25px;
+}
+button{
+    margin-top: 25px;
+    background-color: #210C10;
+    color: #FFF7E0;
+}
+input{
+    border: 2px solid #210C10;
+    background-color: #ffffff00;
+    color: #210C10;
+
+    text-align: center;
+    margin-top: 0 !important;
+
+    transition: 1s;
+}
+.wrapper-form>p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.wrapper-input{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-input>input{
+    width: 80%;
+}
+.wrapper-input>img{
+    width: 13%;
+}

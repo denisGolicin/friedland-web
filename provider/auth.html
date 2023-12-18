@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="provider/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="provider/css/index.css">
+
+    <meta name="description" content="Добро пожаловать! Фридланд аудиогит.">
+    <!-- <meta name="keywords" content="ключевые слова, для, поиска"> -->
+    <meta name="author" content="https://github.com/denisGolicin/">
+    <meta name="application-name" content="Friedland-Promenade">
+    <meta name="reply-to" content="info@itdilab.ru">
+    <meta http-equiv="content-language" content="ru">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="httpsprovider/src/meta/180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="provider/src/meta/32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="provider/src/meta/16.png">
+
+	<link rel="shortcut icon" href="provider/src/meta/logo.ico">
+
+	<meta property="og:image" content="provider/src/meta/180.png">
+	<meta data-n-head="ssr" name="og:title" content="Иммерсивный променад">
+	<meta data-n-head="ssr" name="apple-mobile-web-app-title" content="Иммерсивный променад">
+	<meta data-n-head="ssr" name="og:url" content="provider/src/meta/logo.ico">
+
+    <title>Фридланд - Иммерсивный променад</title>
+
+</head>
+<body>
+
+    <div class="loader">
+        <div class="circle"></div>
+        <p id="loaderText">loading...</p>
+    </div>
+
+    <div class="text-error">Переверните телефон!</div>
+    <div class="wrapper">
+        <div class="window w-auth">
+            <div class="wrapper-logo-auth">
+                <img src="provider/src/logo.svg" alt="">
+                <h1>Добро пожаловать на Иммерсивный променад</h1>
+            </div>
+
+            <div class="wrapper-form">
+                <div class="wrapper-input">
+                    <input type="text" name="" id="code" placeholder="Введите код">
+                    <img id="faq" src="provider/src/faq.svg" alt="">
+                </div>
+                <button id="payCode">Далее</button>
+                <p>Оплатите билет, введите код полученный от кассира или отсканируйте QR-код</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="provider/js/index.js"></script>
+    <script src="provider/js/auth.js"></script>
+</body>
+</html>

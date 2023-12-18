@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="provider/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="provider/css/index.css">
+
+    <meta name="description" content="Добро пожаловать на Иммерсивный променад">
+    <!-- <meta name="keywords" content="ключевые слова, для, поиска"> -->
+    <meta name="author" content="https://github.com/denisGolicin/">
+    <meta name="application-name" content="Friedland-Promenade">
+    <meta name="reply-to" content="info@itdilab.ru">
+    <meta http-equiv="content-language" content="ru">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/meta/180x180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="src/meta/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="src/meta/16х16.png">
+
+	<link rel="shortcut icon" href="provider/src/meta/logo.ico">
+
+	<meta property="og:image" content="provider/src/meta/180x180.png">
+	<meta data-n-head="ssr" name="og:title" content="Иммерсивный променад">
+	<meta data-n-head="ssr" name="apple-mobile-web-app-title" content="Иммерсивный променад">
+	<meta data-n-head="ssr" name="og:url" content="src/meta/logo.ico">
+
+    <title>Фридланд - Иммерсивный променад</title>
+
+</head>
+<body>
+
+    <div class="loader">
+        <div class="circle"></div>
+        <p id="loaderText">loading...</p>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="logo-auth">
+            <img src="provider/src/logo.svg" alt="">
+            <h1>Добро пожаловать в админ-панель веб-приложения 'Иммерсивный променад'</h1>
+        </div>
+
+        <div class="form">
+            <input type="text" id="login" placeholder="Логин">
+            <input type="password" name="" id="password" placeholder="Пароль">
+            <button id="buttonEnter">Войти</button>
+        </div>
+
+    </div>
+
+    <script src="provider/js/index.js"></script>
+    <script src="provider/js/auth.js"></script>
+</body>
+</html>
